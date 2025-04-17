@@ -1,0 +1,90 @@
+<nav
+    class="relative flex flex-row-reverse items-center justify-between px-4 py-4 bg-[#090a09] sm:justify-around sm:flex-row " >
+    <div (click)="toggleMobileMenu()" class="sm:hidden">
+    <button class="flex items-center p-3 text-[#906f47] navbar-burger">
+        <svg class="block w-10 h-10 fill-current" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+        </svg>
+    </button>
+    </div>
+    <ul class="hidden sm:flex sm:mx-auto sm:items-center sm:w-auto sm:space-x-6 ">
+        <li class="group">
+            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Accueil</a>
+            <div
+            class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+        </li>
+        <li class="group">
+            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Services culinaires</a>
+            <div
+            class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+        </li>
+    </ul>
+    <img class="w-22 h-22" src="signature.png"
+    alt="logo brand">
+    <ul class="hidden sm:flex sm:mx-auto sm:items-center sm:w-auto sm:space-x-6">
+        <li class="group">
+            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Évènements</a>
+            <div
+            class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+        </li>
+        <li class="group">
+            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Productions</a>
+            <div
+            class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+        </li>
+    </ul>
+    <div class="absolute bottom-0 left-0 w-full h-[1px] bg-[#906f47]"></div>
+</nav>
+<div *ngIf="ismobileMenuOpen" class="relative z-50 navbar-menu">
+    <nav class="fixed top-0 bottom-0 left-0 flex flex-col w-full px-6 py-6 overflow-y-auto bg-[#cca44c] border-r">
+    <div (click)="closeMenu()" class="flex items-center justify-end mb-8">
+        <button class="navbar-close">
+        <svg class="w-6 h-6 text-gray-100 cursor-pointer hover:text-gray-50" fill="none" stroke="currentColor"
+            stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        </button>
+    </div>
+    <div class="mx-auto">
+        <div class="flex justify-center">
+        <img class="mb-12 w-36"
+            src="logo2.png">
+        </div>
+        <ul class="space-y-6">
+        <li>
+            <a class="block text-4xl font-normal text-center text-black hover:text-white" href="#">Accueil</a>
+        </li>
+        <li>
+            <a class="block text-4xl font-normal text-center text-black hover:text-white" href="#">Services culinaires</a>
+        </li>
+        <li>
+            <a class="block text-4xl font-normal text-center text-black hover:text-white" href="#">Évènements</a>
+        </li>
+        <li>
+            <a class="block text-4xl font-normal text-center text-black hover:text-white" href="#">Productions</a>
+        </li>
+        </ul>
+    </div>
+    <div class="mx-auto mt-auto">
+        <ul class="flex items-center w-auto mx-auto space-x-6">
+        <li>
+            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Instagram</a>
+        </li>
+        <li>
+            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Facebook</a>
+        </li>
+        <li>
+            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Youtube</a>
+        </li>
+        <li>
+            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Linkedin</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+</div>

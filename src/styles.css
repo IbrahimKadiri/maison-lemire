@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+body {
+    font-family: 'Cormorant', sans serif;
+}
+
+section {
+    min-height: 100vh; /* Assure que chaque section prend au moins 100% de la hauteur de l'écran */
+  }
+  
+
