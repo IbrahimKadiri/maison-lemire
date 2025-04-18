@@ -1,37 +1,46 @@
-<header class="relative  text-white overflow-hidden min-h-screen"  style="background-image: url('test.png');">
-    <!-- Background Image + Gradient Overlay -->
-    <div class="absolute inset-0 -z-10"></div>
-  
-    <!-- Container -->
-    <div class="mx-auto w-full max-w-7xl py-2 text-center">
-      <!-- LOGO au centre -->
-      <div class="flex justify-center mb-8">
-        <img
-          src="logo2.png"
-          alt="Maison Lemire Logo"
-          class="w-64 md:w-80 lg:w-96 drop-shadow-lg"
-        />
-      </div>
-  
-      <!-- Slogan -->
-      <p class="mb-8 text-lg md:text-2xl text-white/80 font-light">
-        L’excellence culinaire au service de vos événements, alliant raffinement, passion et savoir-faire pour des moments inoubliables.
-      </p>
-  
-      <!-- Boutons CTA -->
-      <div class="flex justify-center gap-4 flex-wrap">
-        <a href="#services" class="rounded-full bg-white text-black px-6 py-3 text-sm md:text-base font-semibold transition hover:bg-[#cca44c]">
-          Nos Services
-        </a>
-        <a href="#contact" class="rounded-full border border-white px-6 py-3 text-sm md:text-base font-semibold hover:border-black hover:bg-[#cca44c] hover:text-black transition">
-          Nous Contacter
-        </a>
-      </div>
-  
-      <!-- Signature -->
-      <div class="mt-16 flex flex-col items-center gap-4 text-sm text-white/60">
-        <p class="italic">“Une cuisine faite maison, inspirée par la tradition et sublimée par la modernité.”</p>
-      </div>
+<header class="relative text-white overflow-hidden min-h-screen">
+  <!-- Container -->
+  <div class="mx-auto w-full max-w-7xl py-2 text-center" data-aos="fade-up">
+    <!-- LOGO au centre -->
+    <div class="flex justify-center mb-8" >
+      <img
+        src="assets/logo.png"
+        alt="Maison Lemire Logo"
+        class="w-64 md:w-80 lg:w-96 drop-shadow-lg"
+      />
     </div>
-  </header>
+    
+    <!-- Slogan -->
+    <p class="mb-8 text-lg md:text-2xl text-white/80 font-light">
+      L’excellence culinaire au service de vos événements, alliant raffinement, passion et savoir-faire pour des moments inoubliables.
+    </p>
+
+    <!-- Boutons CTA -->
+    <div class="flex justify-center gap-4 flex-wrap" data-aos="zoom-in" data-aos-duration="3000">
+      <a href="#carousel" class="rounded-full bg-white text-black px-6 py-3 text-sm md:text-base font-semibold transition hover:bg-[#cca44c]">
+        Nos Services
+      </a>
+      <a href="#contact" class="rounded-full border border-white px-6 py-3 text-sm md:text-base font-semibold hover:border-black hover:bg-[#cca44c] hover:text-black transition">
+        Nous Contacter
+      </a>
+    </div>
+
+    <!-- Signature -->
+    <div class="mt-16 flex flex-col items-center gap-4 text-sm text-white/60">
+      <p class="italic">“Une cuisine faite maison, inspirée par la tradition et sublimée par la modernité.”</p>
+    </div>
+
+  </div>
+</header>
   
+<section id="carousel" class="py-6" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 text-white">
+      Explorez notre univers gastronomique
+    </h2>
+    <p class="text-center text-white/70 mb-10 text-base md:text-lg">
+      Nos prestations s’adaptent à chaque instant de vie. Faites votre choix parmi nos services sur-mesure.
+    </p>
+    <app-carousel></app-carousel>
+  </div>
+</section>
