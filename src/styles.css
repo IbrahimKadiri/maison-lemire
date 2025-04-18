@@ -40,9 +40,45 @@ section {
 app-carousel {
     position: relative;
     z-index: 10; /* Assure que le carrousel se trouve au-dessus de l'image de fond */
-    margin-top: 50px; /* Un peu d'espace entre le contenu et le carrousel */
     width: 100%;
     max-width: 1200px; /* Limite la largeur du carrousel */
 }
   
-
+.scrolling-track {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scrolling-content {
+    display: inline-flex;
+    width: max-content;
+    animation: scroll-x 30s linear infinite;
+  }
+  
+  .item {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin-right: 4rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  
+  .logo {
+    height: 75px;
+    width: auto;
+  }
+  
+  /* Animation fluide */
+  @keyframes scroll-x {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  

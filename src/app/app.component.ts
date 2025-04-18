@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 ngOnInit() {
   AOS.init({
     duration: 1000, // durée des animations (ms)
-    once: true      // ne joue l'animation qu'une seule fois
+    once: false      // rejoue l'animation
   });
 }
 }

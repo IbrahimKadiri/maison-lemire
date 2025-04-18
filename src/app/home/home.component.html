@@ -17,17 +17,12 @@
 
     <!-- Boutons CTA -->
     <div class="flex justify-center gap-4 flex-wrap" data-aos="zoom-in" data-aos-duration="3000">
-      <a href="#carousel" class="rounded-full bg-white text-black px-6 py-3 text-sm md:text-base font-semibold transition hover:bg-[#cca44c]">
+      <a href="#carousel" class="rounded-full bg-white text-black px-6 py-3 text-sm md:text-base font-semibold transition hover:bg-[#cca44c] active:bg-[#cca44c]">
         Nos Services
       </a>
-      <a href="#contact" class="rounded-full border border-white px-6 py-3 text-sm md:text-base font-semibold hover:border-black hover:bg-[#cca44c] hover:text-black transition">
+      <a href="#contact" class="rounded-full border border-white px-6 py-3 text-sm md:text-base font-semibold hover:border-black hover:bg-[#cca44c] hover:text-black active:bg-[#cca44c] active:text-black transition">
         Nous Contacter
       </a>
-    </div>
-
-    <!-- Signature -->
-    <div class="mt-16 flex flex-col items-center gap-4 text-sm text-white/60">
-      <p class="italic">“Une cuisine faite maison, inspirée par la tradition et sublimée par la modernité.”</p>
     </div>
 
   </div>
@@ -42,5 +37,10 @@
       Nos prestations s’adaptent à chaque instant de vie. Faites votre choix parmi nos services sur-mesure.
     </p>
     <app-carousel></app-carousel>
-  </div>
+  </div>  
+</section>
+
+<section id="contact" class="max-w-7xl mx-auto px-4">
+  <app-banner-slider></app-banner-slider>
+
 </section>
