@@ -13,11 +13,6 @@ body {
     min-height: 100vh;
 }
 
-section {
-    min-height: 100vh; /* Assure que chaque section prend au moins 100% de la hauteur de l'écran */
-}
-
-
   
 /* Sur des écrans plus petits, tu peux ajuster la position ou la taille */
 @media (max-width: 768px) {
@@ -62,6 +57,7 @@ app-carousel {
     color: white;
     font-size: 1.25rem;
     font-weight: 200;
+    font-style: italic;
     margin-right: 4rem;
     letter-spacing: 0.05em;
     white-space: nowrap;
@@ -81,4 +77,3 @@ app-carousel {
       transform: translateX(-50%);
     }
   }
-  

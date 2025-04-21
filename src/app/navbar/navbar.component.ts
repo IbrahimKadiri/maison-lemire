@@ -17,7 +17,6 @@ export class NavbarComponent implements OnInit {
   constructor(private _dataService: DataService) {}
 
   ngOnInit(): void {
-    this.navBarItems = this._dataService.navBarItems
   }
 
   // Ferme le menu lorsque l'utilisateur clique sur un onglet
