@@ -16,7 +16,7 @@ export class ContactComponent {
   onSubmit(form: NgForm) {
     if (form.valid) {
 
-      this._toastr.success('Message envoyé avec succès !');
+      this._toastr.success('Merci de votre message !');
       // CONFIGURATION EMAILJS A FAIRE !!
       /* emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
         name: form.value.name,

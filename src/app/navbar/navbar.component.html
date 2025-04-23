@@ -10,13 +10,13 @@
     </div>
     <ul class="hidden sm:flex sm:mx-auto sm:items-center sm:w-auto sm:space-x-6 ">
         <li class="group">
-            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Accueil</a>
+            <a class="text-lg text-white hover:text-[#cca44c]" routerLink="/">Accueil</a>
             <div
             class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
             </div>
         </li>
         <li class="group">
-            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Services culinaires</a>
+            <a class="text-lg text-white hover:text-[#cca44c]" routerLink="/services">Services culinaires</a>
             <div
             class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
             </div>
@@ -42,49 +42,58 @@
 </nav>
 <div *ngIf="ismobileMenuOpen" class="relative z-50 navbar-menu">
     <nav class="fixed top-0 bottom-0 left-0 flex flex-col w-full px-6 py-6 overflow-y-auto bg-[#cca44c] border-r">
-    <div (click)="closeMenu()" class="flex items-center justify-end mb-8">
+      <div (click)="closeMenu()" class="flex items-center justify-end mb-8">
         <button class="navbar-close">
-        <svg class="w-6 h-6 text-gray-100 cursor-pointer hover:text-gray-50" fill="none" stroke="currentColor"
+          <svg class="w-6 h-6 text-gray-100 cursor-pointer hover:text-gray-50" fill="none" stroke="currentColor"
             stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
+          </svg>
         </button>
-    </div>
-    <div class="mx-auto">
+      </div>
+      <div class="mx-auto">
         <div class="flex justify-center">
-        <img class="mb-12 w-36"
-            src="assets/logo.png">
+          <img class="mb-12 w-36" src="assets/signature_noir.png">
         </div>
         <ul class="space-y-6">
-        <li>
+          <li>
             <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Accueil</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Services culinaires</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Évènements</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Productions</a>
-        </li>
+          </li>
         </ul>
-    </div>
-    <div class="mx-auto mt-auto">
+      </div>
+      <div class="mx-auto mt-auto">
         <ul class="flex items-center w-auto mx-auto space-x-6">
-        <li>
-            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Instagram</a>
-        </li>
-        <li>
-            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Facebook</a>
-        </li>
-        <li>
-            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Youtube</a>
-        </li>
-        <li>
-            <a class="text-sm text-gray-100 hover:text-red-500" href="#">Linkedin</a>
-        </li>
+          <li>
+            <a href="#" aria-label="Instagram" class="active:text-white transition-colors">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M7.5 2C4.47 2 2 4.47 2 7.5v9C2 19.53 4.47 22 7.5 22h9c3.03 0 5.5-2.47 5.5-5.5v-9C22 4.47 19.53 2 16.5 2h-9zM12 7a5 5 0 110 10 5 5 0 010-10zm6.5-.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM12 9.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z" />
+                </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Facebook" class="active:text-white transition-colors">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 16.991 22 12z" />
+                </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn" class="active:text-white transition-colors">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.3h.05c.53-1 1.83-2.3 3.75-2.3 4 0 4.75 2.63 4.75 6v9h-4v-8c0-1.9-.03-4.33-2.64-4.33-2.64 0-3.04 2.06-3.04 4.2v8.13h-4V8z" />
+                </svg>
+            </a>
+          </li>
         </ul>
-    </div>
+      </div>
     </nav>
-</div>
+  </div>
+  
