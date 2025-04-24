@@ -28,9 +28,6 @@ export class CarouselComponent implements OnInit, AfterViewInit {
       spaceBetween: 30,
       grabCursor: true,
       loop: true,
-      autoplay: {
-        delay: 3000,
-      },
     });
   }
 

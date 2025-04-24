@@ -60,8 +60,8 @@
 /* Sur mobile, ajuster la hauteur et la largeur des cards */
 @media (max-width: 768px) {
   .swiper-slide {
-    width: 90%;  /* Réduire la largeur des slides pour les petits écrans */
-    height: 250px;  /* Réduire la hauteur sur mobile */
+    width: 95%;  /* Réduire la largeur des slides pour les petits écrans */
+    height: 330px;  /* Réduire la hauteur sur mobile */
   }
 
   .card {
@@ -91,8 +91,8 @@
 /* Sur très petit écran (moins de 500px), ajuster encore plus */
 @media (max-width: 500px) {
   .swiper-slide {
-    width: 90%;
-    height: 200px;  /* Réduire encore la hauteur pour les très petits écrans */
+    width: 95%;
+    height: 310px;  /* Réduire encore la hauteur pour les très petits écrans */
   }
 
   .card {

@@ -23,7 +23,16 @@ export class HomeComponent implements AfterViewInit {
   scrollToSection(id: string) {
     const el = document.getElementById(id);
     if (el) {
-      const yOffset = -150; // Ajuste header ou spacing
+      // Hauteur de la fenêtre
+      const windowHeight = window.innerHeight;
+      
+      // Hauteur de l'élément cible
+      const elementHeight = el.offsetHeight;
+  
+      // Calcul de la position pour centrer l'élément
+      const yOffset = -(windowHeight / 2) + (elementHeight / 2);  // Pour centrer l'élément dans la fenêtre
+  
+      // Position de l'élément par rapport au haut de la page
       const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
   
       window.scrollTo({
@@ -32,4 +41,5 @@ export class HomeComponent implements AfterViewInit {
       });
     }
   }
+  
 }

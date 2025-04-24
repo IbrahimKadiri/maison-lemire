@@ -1,6 +1,6 @@
 <section class="py-16 text-white">
-    <div class="container mx-auto px-4" id="contact">
-        <h2 class="text-4xl font-light text-center mb-12">Dites-nous ce dont vous avez besoin</h2>
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-light text-center mb-12">Dites-nous ce dont vous avez besoin !</h2>
 
         <div class="flex flex-col md:flex-row gap-10">
         <!-- Formulaire -->
@@ -22,6 +22,7 @@
             <textarea id="message" name="message" rows="5" ngModel required
                 class="w-full px-4 py-2 bg-transparent border border-gray-500 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white"></textarea>
             </div>
+            <input type="text" id="honeypot" name="honeypot" ngModel style="display: none;" autocomplete="off">
 
             <button [disabled]="contactForm.invalid" class="w-full rounded-full bg-white text-black px-6 py-3 text-sm md:text-base font-semibold transition hover:bg-[#cca44c] active:bg-[#cca44c] disabled:bg-[#ddd2b0] disabled:text-gray-500 disabled:cursor-not-allowed">
                 Envoyer
