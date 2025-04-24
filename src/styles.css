@@ -9,31 +9,17 @@ html, body {
 
 body {
     font-family: 'Cormorant', sans serif;
-    background-size: cover;  /* L'image couvre tout le fond */
+    background-image: url('/assets/background.png');
+    background-size: 100% 100%;  
     background-position: center center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêcher l'image de se répéter */
     min-height: 100vh;
 }
 
-  
-/* Sur des écrans plus petits, tu peux ajuster la position ou la taille */
-@media (max-width: 768px) {
-    body {
-        background-size: cover;  /* Toujours couvrir, mais l'image peut être recadrée */
-        background-position: center center;  /* Toujours centrer l'image */
-        min-height: 100vh;  /* Hauteur maximale */
-    }
+.home {
+  min-height: 85dvh;
 }
 
-/* Sur des écrans très petits (comme les téléphones en portrait) */
-@media (max-width: 500px) {
-    body {
-        background-size: cover;  /* Couvre toujours, mais s'adapte mieux */
-        background-position: top center;  /* Aligner le haut de l'image (éviter de couper des zones importantes) */
-        min-height: 100vh;
-    }
-}
-  
 app-carousel {
     position: relative;
     z-index: 10; /* Assure que le carrousel se trouve au-dessus de l'image de fond */

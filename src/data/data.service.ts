@@ -8,6 +8,28 @@ import { catchError, Observable } from "rxjs";
   export class DataService {
     constructor(private http: HttpClient){}
 
+    slides = [
+      {
+        title: 'Évènements',
+        description: 'Organisation clé en main',
+        image: 'assets/event.jpeg'
+      },
+      {
+        title: 'Renfort & Production',
+        description: 'Soutien Pro - Cuisine fiable',
+        image: 'assets/production.jpeg'
+      },
+      {
+        title: 'Livraison',
+        description: 'Repas variés livrés',
+        image: 'assets/livraison.jpeg'
+      },
+      {
+        title: 'Partenariat',
+        description: 'Personnel qualifié disponible via A.L. Services',
+        image: 'assets/partenariat.jpeg'
+      },
+    ];
       // Méthode pour envoyer un message via Formsubmit
   sendMessage(formData: FormData): Observable<any> {
     const url = 'https://formsubmit.co/ajax/cc180f2c2dbad1fe14a87760608de7ae';

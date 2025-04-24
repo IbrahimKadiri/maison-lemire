@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import Swiper from 'swiper/bundle';
+import { DataService } from '../../data/data.service';
 
 @Component({
   selector: 'app-carousel',
@@ -9,30 +11,14 @@ import Swiper from 'swiper/bundle';
   styleUrls: ['./carousel.component.css'],
   imports: [CommonModule]
 })
-export class CarouselComponent implements AfterViewInit {
-  slides = [
-    {
-      title: 'Design Moderne',
-      description: 'Un carrousel élégant pour ton site pro.',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'Responsive',
-      description: 'S’adapte à tous les écrans sans effort.',
-      image: 'https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'Facile à utiliser',
-      description: 'Ajoute ton contenu et c’est prêt.',
-      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'Responsive',
-      description: 'S’adapte à tous les écrans sans effort.',
-      image: 'https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80'
-    },
-  ];
-
+export class CarouselComponent implements OnInit, AfterViewInit {
+  slides: any;
+  constructor(private _router: Router, private _dataService: DataService) {}
+  
+  ngOnInit(): void {
+    this.slides = this._dataService.slides;
+  }
+  
   ngAfterViewInit(): void {
     new Swiper('.swiper', {
       effect: 'coverflow',
@@ -51,5 +37,6 @@ export class CarouselComponent implements AfterViewInit {
   onSlideClick(slide: any) {
     console.log('Slide clicked:', slide);
     // Redirige ici si tu veux
+    this._router.navigate(['/services'])
   }
 }

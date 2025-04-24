@@ -16,21 +16,19 @@ export class ContactComponent {
   onSubmit(form: NgForm) {
     if (form.valid) {
 
-      this._toastr.success('Merci de votre message !');
       // CONFIGURATION EMAILJS A FAIRE !!
-      /* emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-        name: form.value.name,
-        email: form.value.email,
-        message: form.value.message,
-      }, 'YOUR_USER_ID').then(() => {
-        this._toastr.success('Message envoyé avec succès !');
-        form.reset();
-      }).catch(() => {
-        this._toastr.error('Erreur lors de l’envoi du message.');
-      }); */ 
+    emailjs.send('service_z4iekcb', 'template_r0hgacd', {
+      name: form.value.name,
+      email: form.value.email,
+      message: form.value.message
+    }, 'CntIaCD8Mo8x-2YsK').then(() => {
+      this._toastr.success('Message envoyé avec succès !');
+      form.reset();
+    }).catch(() => {
+      this._toastr.error('Erreur lors de l’envoi du message.');
+    }); 
     } else {
-      console.log('error')
-      this._toastr.error('Veuillez remplir tous les champs.');
+      this._toastr.warning('Veuillez remplir tous les champs.');
     }
   }
 }
