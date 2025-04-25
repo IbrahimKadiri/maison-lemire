@@ -17,7 +17,7 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     setTimeout(() => {
-      AOS.refresh(); // ou AOS.refreshHard() si besoin
+      AOS.refresh(); // BUG AOS -- AOS.refreshHard() si besoin
     }, 0); // attendre que le DOM soit complètement mis à jour
   }
   scrollToSection(id: string) {

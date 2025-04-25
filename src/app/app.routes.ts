@@ -4,5 +4,8 @@ import { DetailsComponent } from './details/details.component';
 
 export const routes: Routes = [
     { path:'', component: HomeComponent },
-    { path:'services', component: DetailsComponent }
+    { path:'evenements', component: DetailsComponent },
+    { path:'productions', component: DetailsComponent },
+    { path:'livraisons', component: DetailsComponent },
+    { path:'partenariat', component: DetailsComponent }
 ];

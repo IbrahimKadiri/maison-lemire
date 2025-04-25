@@ -32,8 +32,6 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   }
 
   onSlideClick(slide: any) {
-    console.log('Slide clicked:', slide);
-    // Redirige ici si tu veux
-    this._router.navigate(['/services'])
+    this._router.navigate([slide.link])
   }
 }

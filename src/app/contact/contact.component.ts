@@ -15,12 +15,10 @@ export class ContactComponent {
 
   onSubmit(form: NgForm) {
     if (form.value.honeypot) {
-      console.log('Spam détecté : champ honeypot rempli.');
+      // Spam détecté : champ honeypot rempli.
       return;
     }else {
       if (form.valid) {
-
-        // CONFIGURATION EMAILJS A FAIRE !!
       emailjs.send('service_z4iekcb', 'template_r0hgacd', {
         name: form.value.name,
         email: form.value.email,

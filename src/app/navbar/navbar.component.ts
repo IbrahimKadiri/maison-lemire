@@ -25,7 +25,6 @@ export class NavbarComponent implements OnInit {
         filter(event => event instanceof NavigationEnd)  // Filtrer les événements pour les NavigationEnd
       ).subscribe((event: NavigationEnd) => {
         this.currentRoute = event.urlAfterRedirects;  // Stocker l'URL dans la variable
-        console.log('currentRoute', this.currentRoute)
 
       });
   }
@@ -38,6 +37,5 @@ export class NavbarComponent implements OnInit {
 
   toggleMobileMenu() {
     this.ismobileMenuOpen = !this.ismobileMenuOpen;
-    console.log('toggleMobileMenu', this.ismobileMenuOpen)
   }
 }

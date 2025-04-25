@@ -16,7 +16,7 @@
             </div>
         </li>
         <li class="group">
-            <a class="text-lg text-white hover:text-[#cca44c]" routerLink="/services" routerLinkActive="text-[#cca44c] font-semibold">Évènementiel</a>
+            <a class="text-lg text-white hover:text-[#cca44c]" routerLink="/evenements" routerLinkActive="text-[#cca44c] font-semibold">Évènementiel</a>
             <div
             class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
             </div>
@@ -26,13 +26,13 @@
     alt="logo brand" data-aos="zoom-in" data-aos-duration="2000" routerLink="/">
     <ul class="hidden sm:flex sm:mx-auto sm:items-center sm:w-auto sm:space-x-6">
         <li class="group">
-            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Production</a>
+            <a class="text-lg text-white hover:text-[#cca44c]" routerLink="/productions">Production</a>
             <div
             class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
             </div>
         </li>
         <li class="group">
-            <a class="text-lg text-white hover:text-[#cca44c]" href="#">Livraison</a>
+            <a class="text-lg text-white hover:text-[#cca44c]" routerLink="/livraisons">Livraison</a>
             <div
             class="h-0.5 bg-[#cca44c] scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
             </div>
@@ -51,21 +51,21 @@
         </button>
       </div>
       <div class="mx-auto">
-        <div class="flex justify-center cursor-pointer">
+        <div class="flex justify-center cursor-pointer" routerLink="/" (click)="closeMenu()">
           <img class="mb-12 w-36" src="assets/signature_noir.png">
         </div>
         <ul class="space-y-6">
           <li>
-            <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Accueil</a>
+            <a class="block text-4xl font-normal text-center text-black active:text-white" routerLink="/" (click)="closeMenu()">Accueil</a>
           </li>
           <li>
-            <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Évènementiel</a>
+            <a class="block text-4xl font-normal text-center text-black active:text-white" routerLink="/evenements" (click)="closeMenu()">Évènementiel</a>
           </li>
           <li>
-            <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Production</a>
+            <a class="block text-4xl font-normal text-center text-black active:text-white" routerLink="/productions" (click)="closeMenu()">Production</a>
           </li>
           <li>
-            <a class="block text-4xl font-normal text-center text-black active:text-white" href="#">Livraison</a>
+            <a class="block text-4xl font-normal text-center text-black active:text-white" routerLink="/livraisons" (click)="closeMenu()">Livraison</a>
           </li>
         </ul>
       </div>
