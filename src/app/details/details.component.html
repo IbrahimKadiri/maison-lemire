@@ -5,7 +5,9 @@
         <div class="lg:max-w-lg ">
           <p class="mt-2 text-4xl font-extrabold tracking-tight text-pretty text-white sm:text-6xl"><em>{{matchedItem?.title}}</em></p>
           <p class="mt-6 text-xl text-white whitespace-pre-line" [innerHTML]="matchedItem?.text"></p>
-          
+          <button routerLink="/" fragment="contact" class="w-full mt-10 rounded-full bg-white text-black px-6 py-3 text-sm md:text-base font-extrabold transition hover:bg-[#cca44c] active:bg-[#cca44c]">
+            Faites votre demande
+          </button>
         </div>
       </div>
       <img data-aos="fade-right" data-duration="5000" data-aos-delay="400" src="{{matchedItem?.image}}" alt="Product screenshot" class="w-full h-auto max-h-[600px] object-cover rounded-xl shadow-xl ring-1 ring-gray-400/10" >
