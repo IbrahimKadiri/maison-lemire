@@ -9,7 +9,6 @@ html, body {
 
 body {
     font-family: 'Cormorant', sans serif;
-    background-image: url('/assets/background.png');
     background-size: 100% 100%;  
     background-position: center center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêcher l'image de se répéter */

@@ -1,49 +1,65 @@
-<header class="relative text-white overflow-hidden home">
-  <!-- Container -->
-  <div class="mx-auto w-full max-w-7xl py-2 text-center py-6 px-5" data-aos="fade-up" data-duration="2000">
-    <!-- LOGO au centre -->
-    <div class="flex justify-center mb-8" >
+<header class="relative text-white overflow-hidden home min-h-screen flex flex-col justify-center">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 text-center" data-aos="fade-up" data-aos-duration="2000">
+    
+    <!-- LOGO -->
+    <div class="flex justify-center mb-2">
       <img
         src="assets/logo.png"
         alt="Maison Lemire Logo"
-        class="w-64 md:w-80 lg:w-96 drop-shadow-lg"
+        class="w-56 lg:w-72 drop-shadow-lg"
       />
     </div>
     
-    <h1 class="mb-6 text-3xl sm:text-4xl font-light uppercase">
-      Votre partenaire global en solution <span class="text-[#cca44c] font-extrabold">food & services</span>. 
+    <!-- TITRE -->
+    <h1 class="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-light leading-snug uppercase font-semibold">
+      Votre partenaire global en solution 
+      <span class="text-[#cca44c] font-extrabold italic">food & services</span>.
     </h1>
-    <!-- Slogan -->
-    <p class="text-lg md:text-xl text-white/80  font-light">
-      Événementiel, production culinaire sur-mesure, livraison de repas et personnel qualifié pour garantir le succès de vos événements.
+    
+    <!-- SLOGAN -->
+    <p class="mb-4 text-sm sm:text-base md:text-lg text-white/80 font-light max-w-2xl mx-auto leading-relaxed italic">
+      Événementiel, production culinaire sur-mesure, livraison de repas et personnel qualifié 
+      pour garantir le succès de vos événements.
     </p>
 
-    <!-- Boutons CTA -->
-    <div class="mt-8 flex justify-center gap-4 flex-wrap" data-aos="zoom-in" data-aos-delay="400">
-      <button (click)="scrollToSection('carousel')" class="rounded-full bg-white text-black px-6 py-3 text-sm md:text-base font-semibold transition hover:bg-[#cca44c] active:bg-[#cca44c]">
+    <!-- CTA -->
+    <div class="mt-4 flex flex-col sm:flex-row justify-center gap-4" data-aos="zoom-in" data-aos-delay="1000">
+      <button 
+        (click)="scrollToSection('carousel')" 
+        class="rounded-full bg-white text-black px-5 py-2.5 text-sm md:text-base font-semibold transition hover:bg-[#cca44c] hover:text-white active:bg-[#cca44c] active:text-white shadow-lg"
+      >
         Nos Services
       </button>
-      <button (click)="scrollToSection('contact')"  class="rounded-full border border-white px-6 py-3 text-sm md:text-base font-semibold hover:border-black hover:bg-[#cca44c] hover:text-black active:bg-[#cca44c] active:text-black transition">
+      <button 
+        (click)="scrollToSection('contact')"  
+        class="rounded-full border border-white px-5 py-2.5 text-sm md:text-base font-semibold text-white transition hover:border-[#cca44c] hover:bg-[#cca44c] hover:text-white active:bg-[#cca44c] active:text-white shadow-lg"
+      >
         Nous Contacter
       </button>
     </div>
 
   </div>
 </header>
-<div class="w-full h-px bg-white/10"></div>
-<section class="py-25" data-aos="fade-right" data-duration="2000" id="carousel">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10" >
-    <h2 class="text-3xl md:text-5xl font-light text-center mb-4 text-white">
-      Découvrez notre univers <span class="font-semibold">gastronomique</span> et <span class="font-semibold">événementiel</span>
+
+
+<!-- Section Carousel -->
+<section class="py-16 sm:py-20 md:py-24" data-aos="fade-right" data-aos-duration="2000" id="carousel">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 text-center">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light mb-4 text-white">
+      Découvrez notre univers 
+      <span class="font-semibold italic">gastronomique</span> et 
+      <span class="font-semibold italic">événementiel</span>
     </h2>
-    <p  class="text-center text-white/70 mb-10 text-base md:text-lg">
-      Nos solutions s'ajustent à chaque moment de votre activité, choisissez parmis nos services personnalisés, pensés pour vous.
+    <p class="text-sm sm:text-base md:text-lg text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed italic">
+      Nos solutions s'ajustent à chaque moment de votre activité. 
+      Choisissez parmi nos services personnalisés, pensés pour vous.
     </p>
-    <app-carousel></app-carousel>
+    <app-carousel data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000"></app-carousel>
   </div>  
 </section>
-<div class="w-full h-px bg-white/10"></div>
-<section class="max-w-7xl mx-auto px-4 mt-12" data-aos="fade-left" data-duration="2000">
+
+<!-- BANNERS + CONTACT -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-12 space-y-12" data-aos="fade-right" data-aos-duration="2000">
   <app-banner-slider></app-banner-slider>
   <app-contact id="contact"></app-contact>
   <app-banner-slider></app-banner-slider>
