@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy-github": "ng build --configuration production --base-href /maison-lemire/ && npx angular-cli-ghpages --dir=dist/maison-lemire/browser --branch gh-pages --repo https://github.com/IbrahimKadiri/maison-lemire.git"
+
   },
   "private": true,
   "dependencies": {

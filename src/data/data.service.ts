@@ -71,9 +71,9 @@ Si vous n’avez pas encore trouvé de lieu pour votre événement, nous serons 
       {
         title: 'Partenariat',
         text: `
-  Nous sommes fiers de collaborer avec <strong>A.L. Services</strong>, une société spécialisée dans la mise à disposition de personnel pour tous types d'événements. <br><br>Que vous ayez besoin de <em>serveurs</em>, <em>chefs</em>, <em>barmans</em>, <em>hôtesses d'accueil</em> ou tout autre type de personnel, <strong>A.L. Services</strong> saura répondre à vos besoins avec <strong>professionnalisme</strong> et <em>efficacité</em>.<br><br>
-  Leur équipe qualifiée est disponible pour vous assister à chaque étape de votre événement, garantissant ainsi un service <strong>impeccable</strong>. <br><br> <em>Pour plus d’informations : <strong><a href="https://al-services.be/" target="_blank" class="underline">A.L. Services</a></strong></em>`,
-        image: 'assets/al-services.jpg',
+  Nous sommes fiers de collaborer avec <strong>Lemire Global Solutions</strong>, une société spécialisée dans la mise à disposition de personnel pour tous types d'événements. <br><br>Que vous ayez besoin de <em>serveurs</em>, <em>chefs</em>, <em>barmans</em>, <em>hôtesses d'accueil</em> ou tout autre type de personnel, <strong>Lemire Global Solutions</strong> saura répondre à vos besoins avec <strong>professionnalisme</strong> et <em>efficacité</em>.<br><br>
+  Leur équipe qualifiée est disponible pour vous assister à chaque étape de votre événement, garantissant ainsi un service <strong>impeccable</strong>. <br><br> <em>Pour plus d’informations : <strong><a href="https://www.lemireglobalsolutions.be/" target="_blank" class="underline">Lemire Global Solutions</a></strong></em>`,
+        image: 'assets/LGS.png',
         link: '/partenariat'
       }
     ]
