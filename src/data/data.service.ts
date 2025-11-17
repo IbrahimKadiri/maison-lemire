@@ -29,7 +29,7 @@ import { catchError, Observable } from "rxjs";
       },
       {
         title: 'Partenariat',
-        description: 'Personnel qualifié disponible via A.L. Services',
+        description: 'Personnel qualifié disponible via Lemire Global Solutions',
         image: 'assets/partenariat.jpeg',
         link: '/partenariat'
       },
@@ -72,7 +72,7 @@ Si vous n’avez pas encore trouvé de lieu pour votre événement, nous serons 
         title: 'Partenariat',
         text: `
   Nous sommes fiers de collaborer avec <strong>Lemire Global Solutions</strong>, une société spécialisée dans la mise à disposition de personnel pour tous types d'événements. <br><br>Que vous ayez besoin de <em>serveurs</em>, <em>chefs</em>, <em>barmans</em>, <em>hôtesses d'accueil</em> ou tout autre type de personnel, <strong>Lemire Global Solutions</strong> saura répondre à vos besoins avec <strong>professionnalisme</strong> et <em>efficacité</em>.<br><br>
-  Leur équipe qualifiée est disponible pour vous assister à chaque étape de votre événement, garantissant ainsi un service <strong>impeccable</strong>. <br><br> <em>Pour plus d’informations : <strong><a href="https://www.lemireglobalsolutions.be/" target="_blank" class="underline">Lemire Global Solutions</a></strong></em>`,
+  Leur équipe qualifiée est disponible pour vous assister à chaque étape de votre événement, garantissant ainsi un service <strong>impeccable</strong>. <br><br> <em>Pour plus d’informations : <strong><a href="https://www.lemireglobalsolutions.be/d" target="_blank" class="underline">Lemire Global Solutions</a></strong></em>`,
         image: 'assets/LGS.png',
         link: '/partenariat'
       }
