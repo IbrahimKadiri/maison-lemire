@@ -29,7 +29,7 @@ import { catchError, Observable } from "rxjs";
       },
       {
         title: 'Partenariat',
-        description: 'Personnel qualifié disponible via Lemire Global Solutions',
+        description: 'Personnel qualifié disponible via LGS',
         image: 'assets/partenariat.jpeg',
         link: '/partenariat'
       },

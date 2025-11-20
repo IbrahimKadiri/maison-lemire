@@ -6,6 +6,9 @@
       
       <!-- Formulaire -->
       <form class="flex-1 space-y-6" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+        <!-- Clé Web3Forms -->
+        <input type="hidden" name="access_key" value="1932e8c9-f31d-4a77-a223-21416bf9c1cd">
+
         <div>
           <label for="name" class="block mb-1 font-medium">Nom *</label>
           <input type="text" id="name" name="name" ngModel required
